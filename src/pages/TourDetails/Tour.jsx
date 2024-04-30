@@ -7,7 +7,7 @@ import FilterProduct from './FilterProduct';
 
 const Tour = () => {
   return (
-    <div className=''>
+    <div className='w-full'>
         <div>
             <div className='bg-039D9D w-full h-200'>
 

@@ -10,8 +10,8 @@ const Filter = () => {
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const labelSwitch = { inputProps: { 'aria-label': 'Switch demo' } };
   return (
-    <div className='w-295'>
-        <div className='bg-F2F2F2 h-119 rounded-md px-18'>
+    <div className=''>
+        <div className='bg-F2F2F2 pb-4 rounded-md px-18'>
             <div>
                 <h1 className='pt-5 font-medium text-base text-181818'>Search by property name</h1>
                 <div className='relative flex items-center mt-4'>
