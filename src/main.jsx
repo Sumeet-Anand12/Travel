@@ -9,6 +9,7 @@ import Home from "./pages/Home/Home";
 import App from './App';
 import Layout from './component/Layout/Layout';
 import Tour from './pages/TourDetails/Tour';
+import AccountDetails from "./pages/AccountDetails/AccountDetails";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/tour",
         element: <Tour />,
+      },
+      {
+        path: "/account-detail",
+        element: <AccountDetails />,
       }
     ]
   },
