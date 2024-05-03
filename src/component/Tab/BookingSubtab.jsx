@@ -9,22 +9,24 @@ const BookingSubtab = () => {
             <div className='py-30 pl-6 flex items-center justify-between '>
                <div className='flex items-center gap-2'>
                <img src={flightIcon} alt="" />
-               <h1 className='text-112211 font-semibold text-base text-Montserrat'>Flight</h1>                
+               <button className='w-full text-112211 font-semibold text-base text-Montserrat'>
+                   Flight                
+
+               </button>
                </div>
                 <hr className='w-12 text-D7E2EE border rotate-90' />
             </div>
             <div className='py-30 pl-6 flex items-center justify-between '>
                 <div className='flex items-center gap-2'>
                     <img src={bedIcon} alt="" />
-                    <h1 className='text-112211 font-semibold text-base text-Montserrat'>
-                          Stays
-                    </h1>                
+                    <button className='w-full text-112211 font-semibold text-base text-Montserrat'>
+                    Stays                
+               </button>
+               
                 </div>
                 
             </div>
             
-
-
         </div>
 
 
