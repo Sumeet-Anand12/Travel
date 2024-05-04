@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HeroSection from '../../assets/AccountDetails/HeroSection.svg'
 import editUser from '../../assets/AccountDetails/editUser.svg'
 import User from '../../assets/Header/User.svg';
@@ -6,8 +6,13 @@ import uploadIcon from '../../assets/UploadIcon.svg'
 import Tab from '../../component/Tab/Tab';
 import Account from '../../component/Tab/Account';
 import HistoryTab from '../../component/Tab/HistoryTab';
+import PaymentTab from '../../component/TabDetails/PaymentTab';
 
 const AccountDetails = () => {
+
+  
+  const [tabClick, setTabClick] = useState(0);
+
   return (
     <div className='w-full px-104'>
         <div className='py-12' >
@@ -41,9 +46,25 @@ const AccountDetails = () => {
             </div>
            
               <div className=''>
-                <Tab />       
-               {/* <Account /> */}
-                  <HistoryTab />
+                <Tab setTabClick={setTabClick} /> 
+                {
+                  tabClick ===0 ?
+                 <Account />
+                 :
+                ''
+                }
+                {
+                  tabClick ===1 ?
+                 <HistoryTab />
+                 :
+                ''
+                }
+                {
+                  tabClick ===2 ?
+                 <PaymentTab />
+                 :
+                ''
+                }
               </div>
             
 
