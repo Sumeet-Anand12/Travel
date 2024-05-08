@@ -15,8 +15,6 @@ const Modal = ({SetCloseModal}) => {
         SetCloseModal(); // Call the closeModal function passed as prop
       };
     
-   
-
   return (
 
 

@@ -10,6 +10,7 @@ import App from './App';
 import Layout from './component/Layout/Layout';
 import Tour from './pages/TourDetails/Tour';
 import AccountDetails from "./pages/AccountDetails/AccountDetails";
+import HotelListing from "./pages/HotelPage/HotelListing";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/account-detail",
         element: <AccountDetails />,
+      },
+      {
+        path: "/hotel-listing",
+        element: <HotelListing />,
       }
     ]
   },
