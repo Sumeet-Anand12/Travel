@@ -9,7 +9,11 @@ import heroImg2 from '../../assets/HotelDetails/heroImg2.svg'
 import heroImg3 from '../../assets/HotelDetails/heroImg3.svg'
 import heroImg4 from '../../assets/HotelDetails/heroImg4.svg'
 import heroImg5 from '../../assets/HotelDetails/heroImg5.svg'
-import tripleStar from '../../assets/HotelDetails/tripleStar.svg'
+import pool from '../../assets/HotelAmenities/pool.svg'
+import map from '../../assets/HotelDetails/map.svg'
+import RatingBox from '../../component/Hotel/RatingBox';
+import AvailableRoom from '../../component/Hotel/AvailableRoom';
+import Review from '../../component/Hotel/Review';
 const HotelListing = () => {
   return (
     <div className='bg-FAFBFC w-full min-h-screen'>
@@ -98,67 +102,99 @@ const HotelListing = () => {
 
                    {/* Rating Box section */}
                   
-                    <div>
-                        <div className='flex items-center gap-4 pt-8'>
-
-                                <div className='bg-039D9D w-166 rounded-xl'>
-                                    <div className='flex flex-col pt-4 pb-2 pl-4 gap-8'>
-                                        <span className='text-FFFFFF text-32 text-bold'>4.2</span>
-                                        <div className='flex flex-col gap-1'>
-                                            <span className='text-FFFFFF text-base font-bold'>Very good</span>
-                                            <span className='text-FFFFFF text-sm font-medium'>371 reviews</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='border-039D9D border w-160 rounded-xl'>
-                                    <div className='flex flex-col pt-4 pl-4 pb-4 gap-61'>
-                                        <img src={tripleStar} alt="" className='w-8 h-8 text-000000' />
-                                        <div>
-                                            <span className='text-112211 text-base font-medium'>Near park</span>  
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='border-039D9D border w-160 rounded-xl'>
-                                    <div className='flex flex-col pt-4 pl-4 pb-4 gap-61'>
-                                        <img src={tripleStar} alt="" className='w-8 h-8 text-000000' />
-                                       
-                                        <div className=''>
-                                            <span className='text-112211 text-base font-medium'>Near park</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='border-039D9D border w-160 rounded-xl'>
-                                    <div className='flex flex-col pt-4 pl-4 pb-4 gap-61'>
-                                        <img src={tripleStar} alt="" className='w-8 h-8 text-000000' />
-                                       
-                                        <div className=''>
-                                            <span className='text-112211 text-base font-medium'>Near park</span>
-                        
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='border-039D9D border w-160 rounded-xl'>
-                                    <div className='flex flex-col pt-4 pl-4 pb-4 gap-61'>
-                                        <img src={tripleStar} alt="" className='w-8 h-8 text-000000' />
-                                       
-                                        <div className=''>
-                                            <span className='text-112211 text-base font-medium'>Near park</span>
-                        
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-
-                    </div>
+                   <RatingBox />
 
                     {/* Available room section */}
 
                     <hr  className='border-112211 opacity-25 border mt-16'/>
 
+                   <AvailableRoom />
+
+
                </div>
+            {/* Location Section */}
+            <div>
+            <hr  className='border-112211 opacity-25 border mt-16'/>
+               <div className='pt-16'>
+                <div className='flex items-center justify-between'>
+                    <h1 className='text-112211 text-xl font-bold font-Poppins'>Location/Map</h1>
+                    <button className='bg-039D9D px-4 py-2 rounded'>View on google maps</button>
+                </div>
+                <div className='pt-8'>
+                    <img src={map} alt="" />
+                    <div className='flex items-center gap-1'>
+                            <FaLocationDot />
+                            <span>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</span>
 
+                        </div>
+                </div>
+               </div>
+            </div>
 
+            {/* Amenities Section */}
+             <div>
+             <hr  className='border-112211 opacity-25 border mt-16'/>
+                <div className='pt-16'>
+                
+                  <h1 className='font-Poppins font-bold text-xl '>Amenities</h1>
+                   <div className='flex items-center gap-x-300 pt-8'>
+                    <div className='flex flex-col gap-6'>
+                            <div className='flex items-center gap-2'>
+                                <img src={pool} alt="" />
+                                <span>Outdoor pool</span>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <img src={pool} alt="" />
+                                <span>Indoor pool</span>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <img src={pool} alt="" />
+                                <span>Spa and wellness center</span>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <img src={pool} alt="" />
+                                <span>Restaurant</span>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <img src={pool} alt="" />
+                                <span>Room service</span>
+                            </div>
+                    </div>
+                    <div className='flex flex-col gap-6'>
+                            <div className='flex items-center gap-2'>
+                                <img src={pool} alt="" />
+                                <span>Fitness center</span>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <img src={pool} alt="" />
+                                <span>Bar/Lounge</span>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <img src={pool} alt="" />
+                                <span>Free Wi-Fi</span>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <img src={pool} alt="" />
+                                <span>Tea/coffee machine</span>
+                            </div>
+                            <div className='flex items-center'>
+                               <button className='font-Montserrat text-FF8682 text-base font-semibold'>
+                                +24 more
+                               </button>
+                            </div>
+                    </div>
+                   </div>
+                </div>
+             </div>
+
+             {/* Review Section */}
+
+             <div>
+             <hr  className='border-112211 opacity-25 border mt-16'/>
+
+            <Review />
+
+             </div>
         </div>
     </div>
   )
