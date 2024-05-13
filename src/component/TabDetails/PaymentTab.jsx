@@ -11,8 +11,6 @@ const PaymentTab = () => {
     setOpenModal(false);
   };
 
-  
-  
   return (
 
 

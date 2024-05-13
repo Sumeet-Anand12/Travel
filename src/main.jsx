@@ -11,6 +11,7 @@ import Layout from './component/Layout/Layout';
 import Tour from './pages/TourDetails/Tour';
 import AccountDetails from "./pages/AccountDetails/AccountDetails";
 import HotelListing from "./pages/HotelPage/HotelListing";
+import BookingDetails from "./pages/HotelPage/BookingDetails";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/hotel-listing",
         element: <HotelListing />,
+      },
+      {
+        path: "/booking",
+        element: <BookingDetails />,
       }
     ]
   },

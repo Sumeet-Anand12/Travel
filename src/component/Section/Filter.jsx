@@ -116,15 +116,9 @@ const labelSwitch = { inputProps: { 'aria-label': 'Switch demo' } };
                             <div className='flex gap-1 py-014  px-010 items-center border-l-2'>
                                 <h1 className='font-normal text-base'>5</h1>
                                 <FaRegStar className='text-yellow-400'/>
-                            </div>
-                           
-                            
+                            </div>  
                         </div>
-                        
-                       
-                      </div>
-                      
-                       
+                      </div>    
                     </div>
                </div>
                <div className='mt-5'>               
