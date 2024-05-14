@@ -9,3 +9,7 @@
     }
 @tailwind utilities;
 
+body {
+    background-color: #FAFBFC;
+}
+

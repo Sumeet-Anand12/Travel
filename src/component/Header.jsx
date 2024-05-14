@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className='max-w-1440 max-h-screen'>
 
-         <div className='w-full flex px-104 h-87 items-center justify-between shadow-md drop-shadow-112211'>
+         <div className='w-full bg-FFFFFF  flex px-104 h-87 items-center justify-between shadow-md drop-shadow-112211'>
            <ul className='flex items-center gap-3'>
             <li>
                 <a href="">Find Flight</a>

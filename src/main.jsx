@@ -12,6 +12,7 @@ import Tour from './pages/TourDetails/Tour';
 import AccountDetails from "./pages/AccountDetails/AccountDetails";
 import HotelListing from "./pages/HotelPage/HotelListing";
 import BookingDetails from "./pages/HotelPage/BookingDetails";
+import CardPayment from "./pages/HotelPage/CardPayment";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/booking",
         element: <BookingDetails />,
+      },
+      {
+        path: "/card-payment",
+        element: <CardPayment />,
       }
     ]
   },

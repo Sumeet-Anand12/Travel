@@ -192,7 +192,6 @@ const labelSwitch = { inputProps: { 'aria-label': 'Switch demo' } };
                        
                     </div>
                </div>
-       
                <div className='mt-5'>               
                     <div className=' border border-E0E0E0 rounded-md'>
                       <div className='bg-F2F2F2 border-b-2'>
